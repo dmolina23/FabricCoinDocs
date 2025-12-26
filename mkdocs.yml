@@ -1,0 +1,62 @@
+site_name: Documentación Hyperledger Fabric & ERC-20
+site_description: Guía para redes Fabric, Tokens ERC-20 y Algoritmos de Consenso.
+
+theme:
+  name: material
+  language: es
+  
+  # Configuración de Colores (Claro / Oscuro)
+  palette: 
+    # Configuración Modo Claro (Default)
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Cambiar a modo oscuro
+
+    # Configuración Modo Oscuro (Slate)
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Cambiar a modo claro
+
+  # Configuración de Fuente
+  font:
+    text: Cabin          # Fuente principal solicitada
+    code: Roboto Mono    # Fuente para bloques de código (mejor dejar una monoespaciada)
+
+  features:
+    - navigation.tabs
+    - content.code.copy
+    - navigation.top
+
+# Enlazar la hoja de estilos personalizada para el tamaño de letra
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Inicio: index.md
+  - Gestión de Red:
+    - Red Oficial (Test Network): red/01-red-oficial.md
+    - Red Personalizada: red/02-red-personal.md
+  - Token ERC-20:
+    - Conceptos: token/01-concepto-erc20.md
+    - Despliegue y Uso: token/02-despliegue.md
+  - Consenso:
+    - Investigación y BFT: consenso/investigacion.md
+
+markdown_extensions:
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      # IMPORTANTE: Definir un estilo compatible
+      # 'dracula', 'monokai', 'github-dark' suelen ir bien con Shadcn
+      pygments_style: dracula 
+  - pymdownx.inlinehilite

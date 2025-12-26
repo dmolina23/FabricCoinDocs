@@ -1,0 +1,19 @@
+:root {
+    /* 
+       Ajuste del tamaño base de la fuente.
+       El valor por defecto suele ser 16px. 
+       Aquí lo bajamos a 14px. Puedes probar con 13px si lo quieres más pequeño.
+    */
+    --md-typeset-font-size: 14px;
+}
+
+/* Opcional: Si quieres que el código también sea más pequeño */
+code, kbd, pre {
+    font-size: 0.85em; /* Un 85% del tamaño del texto normal */
+}
+
+/* Opcional: Ajuste para que la fuente Cabin se vea un poco más nítida */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
