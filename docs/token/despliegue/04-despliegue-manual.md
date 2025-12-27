@@ -1,6 +1,4 @@
-# Despliegue del Token ERC-20
-
-Usaremos el código base oficial de `fabric-samples/token-erc-20/chaincode-go`
+# Despliegue manual del Token ERC-20
 
 ## 1. Empaquetado del Chaincode
 Configura las variables de entorno y empaqueta:
@@ -28,17 +26,4 @@ Una vez aprobado, haz commit:
 
 ```bash
 peer lifecycle chaincode commit ... --name token_erc20 ...
-```
-
-## 4. Inicialización y Uso (Minting)
-Inicializa el token creando el suministro inicial para un usuario.
-
-```bash
-peer chaincode invoke ... -c '{"function":"Mint","Args":["5000"]}'
-```
-
-### Transferir tokens a otro usuario:
-
-```bash
-peer chaincode invoke ... -c '{"function":"Transfer","Args":["x509::CN=User1...","100"]}'
 ```

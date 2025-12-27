@@ -19,6 +19,11 @@ Hyperledger proporciona un script robusto llamado `test-network.sh` que levanta:
     ```
     *Nota: La bandera `-ca` levanta Autoridades de Certificación reales en lugar de usar cryptogen.*
 
+4. Desplegar el chaincode:
+    ```bash
+    ./network.sh deployCC -ccn mycoin -ccp ../token-erc-20/chaincode-go/ -ccl go
+    ```
+
 ## Validación
 Verifica que los contenedores están corriendo:
 

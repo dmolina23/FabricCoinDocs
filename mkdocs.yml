@@ -1,5 +1,6 @@
-site_name: Documentación Hyperledger Fabric & ERC-20
-site_description: Guía para redes Fabric, Tokens ERC-20 y Algoritmos de Consenso.
+site_name: Implementación de una Criptomoneda en Hyperledger Fabric
+site_description: Guía para implementar una criptomoneda (basada en Tokens ERC-20) en Hyperledger Fabric. Estudio de la posibilidad de aplicar Algoritmos de Consenso personalizados a Hyperledger Fabric.
+site_author: David Molina Gámez
 
 theme:
   name: material
@@ -41,14 +42,25 @@ extra_css:
 
 nav:
   - Inicio: index.md
+  - Prerrequisitos:
+    - Instalación de Docker y Docker-Compose: prerrequisitos/01-docker-y-docker-compose.md
+    - Instalación de Go (Golang): prerrequisitos/02-go.md
+    - Instalación de Hyperledger Fabric: prerrequisitos/03-hyperledger-fabric.md
+
   - Gestión de Red:
     - Red Oficial (Test Network): red/01-red-oficial.md
     - Red Personalizada: red/02-red-personal.md
+
   - Token ERC-20:
     - Conceptos: token/01-concepto-erc20.md
-    - Despliegue y Uso: token/02-despliegue.md
-  - Consenso:
-    - Investigación y BFT: consenso/investigacion.md
+    - Implementación: token/02-implementacion.md
+    - Despliegue y Uso:
+      - Despliegue (Red Personalizada): token/despliegue/04-despliegue-manual.md
+      - Despliegue (Test Network): token/despliegue/03-despliegue-fabric.md
+      - Uso del Token: token/05-uso-token.md
+
+  - Consenso Personalizado:
+    - Implementación de un algoritmo de consenso personalizado: consenso/investigacion.md
 
 markdown_extensions:
   - pymdownx.superfences

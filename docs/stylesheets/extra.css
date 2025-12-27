@@ -4,7 +4,7 @@
        El valor por defecto suele ser 16px. 
        Aquí lo bajamos a 14px. Puedes probar con 13px si lo quieres más pequeño.
     */
-    --md-typeset-font-size: 14px;
+    --md-typeset-font-size: 12px;
 }
 
 /* Opcional: Si quieres que el código también sea más pequeño */

@@ -20,4 +20,4 @@ El Chaincode debe soportar:
 
 &nbsp;
 
-> En los archivos de _fabric-samples_ podemos encontrar un ejemplo de token ERC20 semi-implementado
+> En los archivos de _fabric-samples_ podemos encontrar un ejemplo de token ERC20, pero no implementado.
